@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(204, 204, 204);
+    font-size: 14px;
+}
+.container{
+    width: 980px;
+    height: 1500px;
+    margin: 0 auto;
+    padding: 0 50px 30px;
+    background: white;
+}
+/*头部**************/
+.header{
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid gray;
+    font-size: 12px;
+}
+.header-left{
+    background: rgb(212, 93, 92);
+    color: white;
+    width: 110px;
+    height: 58px;
+    float: left;
+    display: inline-block;
+    padding: 38px 5px 10px;
+}
+.header-time{
+    float: right;
+    color: rgb(212, 93, 92);
+    padding: 38px 5px 10px;
+}
+/*主体部分**************/
+.row{
+    padding-bottom: 30px;
+    border-bottom: 2px solid gray;
+}
+.col{
+    padding-top: 50px;
+    display: block;
+}
+/*顶部****/
+.top{
+    position: relative;
+    overflow: hidden;
+}
+.top-left{
+    width: 640px;
+    height: 300px;
+    position: relative;
+}
+.pic1{
+    width: 100%;
+    z-index: 0;
+}
+.cover-left{
+    width: 190px;
+    height: 300px;
+    background: green;
+    opacity: 0.3;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cover-right{
+    width: 190px;
+    height: 300px;
+    background: red;
+    opacity: 0.3;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.top-right{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 5px solid rgb(204, 128, 145);
+}
+.top-right-up h2{
+    font-variant: small-caps;
+    text-decoration: underline;
+    font-size: 25px;
+}
+.top-right-up p{
+    color: gray;
+    font-size: 12px;
+    font-style: oblique;
+}
+.num{
+    font-size: 116px;
+    color: #75b86b;
+    font-style: oblique;
+    margin-left: -20px;
+}
+.top-right-bot{
+    position: relative;
+}
+.bot1{
+    font-size: 60px;
+    color: rgb(204, 128, 145);
+    float: left;
+    margin-top: -20px;
+}
+.bot2{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.bot2-text1{
+    font-size: 20px;
+    color: rgb(204, 128, 145);
+    display: block;
+}
+.bot2-text2{
+    font-size: 12px;
+    color: gray;
+}
+/*中部****/
+.middle{
+   overflow: hidden;
+}
+.middle-left h2{
+    color: green;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.middle-main h2{
+    color: orange;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.middle-right h2{
+    color: brown;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.middle-left,.middle-main,.middle-right{
+    float: left;
+    width: 230px;
+    height: 300px;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: justify;
+}
+.middle-right{
+    position: relative;
+}
+.middle-right p{
+    margin-bottom: 130px;
+}
+.middle-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+
+}
+.middle-right ul li span{
+    color: brown;
+    font-style: oblique;
+}
+/*底部****/
+.bottom{
+    overflow: hidden;
+}
+.bottom-left{
+    width: 420px;
+    height: 610px;
+    float: left;
+}
+.bottom-left-title{
+    border-bottom: 2px solid #11456b;
+}
+.bottom-left-title p{
+    font-size: 35px;
+	font-family: "黑体";
+	color: #11456b;
+	font-weight:bold;
+}
+.bottom-left-title p span{
+    font-size: 60px;
+	color: #f5e327;
+    font-family: "黑体";
+    font-weight: bold;
+	font-style: oblique;
+}
+.bottom-left-text{
+    padding: 15px 0px;
+    text-align: justify;
+}
+.bottom-left-text p::first-letter{
+    font-size: 50px;
+    color: yellow;
+    float: left;
+    line-height: 40px;
+}
+.pic2{
+    float: right;
+}
+.bottom-right{
+    width: 400px;
+    height: 610px;
+    float: right;
+}
+.bottom-right-banner{
+    height: 250px;
+    width: 400px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.pic4{
+    height: 250px;
+    width: 400px;
+}
+.banner-text{
+    height: 60px;
+    width: 400px;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.banner-text::after{
+    content: "";
+    background: gray;
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.banner-text p{
+    color: white;
+    border-left: 5px solid #75b86b;
+    font-size: 25px;
+    margin-left: 40px;
+    padding: 10px;
+}
+.banner-text p span{
+    font-size: 12px;
+    color: #75b86b;
+    padding-left: 10px;
+    font-style: oblique;
+}
+.bottom-right-bot{
+    width: 400px;
+    height: 300px;
+    background: rgb(238, 237, 214);
+    position: relative;
+}
+.right-bot-up{
+    padding: 20px;
+}
+.right-bot-up ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.right-bot-up ul li{
+    margin-bottom: 10px;
+}
+.right-bot-up ul li span{
+    font-size: 12px;
+    font-style: oblique;
+    line-height: 16px;
+    opacity: 0.7;
+}
+.right-bot-down{
+    overflow: hidden;
+}
+.bot-down-left{
+    width:240px;
+    height: 160px; 
+    background: #cd4a48;
+    color: white;
+    padding: 20px 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.bot-down-left span{
+    display: inline-block;
+    float: left;
+    font-size: 80px;
+    margin-right: 10px;
+}
+.down-left-text {
+    border-left:2px solid white;
+    float: left;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.t1{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.t2{
+    font-size: 10px;
+}
+.bot-down-right{
+    float: right;
+    width: 130px;
+    font-size: 14px;
+    color: #5a5b5b;
+    line-height: 16px;
+    text-indent: 3em;
+    margin-right: 20px;
+    padding-top: 30px;
+}
+.pu_left{
+    font-size: 50px;
+    color: #d45d5c;
+    position: absolute;
+    bottom: 130px;
+    right: 130px;
+}
+.pu_right{
+    font-size: 50px;
+    color: #d45d5c;
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+}
+/*footer部分**************/
+.footer{
+    clear: both;
+    margin: 0 auto;
+    width: 892px;
+    height: 59px;
+    border-top: 1px solid #938e8c;
+}
+.footer span{
+    float: right;
+    font-size: 12px;
+    color: #d45d5c;
+}
